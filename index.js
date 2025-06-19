@@ -23,4 +23,4 @@ function calcular(num1, num2, operacao) {
 }
 
 // Exemplo de uso
-console.log(calcular(10, 5, '+')); // Resultado: 15
+console.log("O resultado do cálculo é " + calcular(10, 5, '+')); // Resultado: 15
