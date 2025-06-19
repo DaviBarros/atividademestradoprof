@@ -1,2 +1,26 @@
-console.log(2+2)
-console.log(6*6)
+// Função para realizar operações matemáticas básicas
+function calcular(num1, num2, operacao) {
+  let resultado;
+
+  switch (operacao) {
+    case '+':
+      resultado = num1 + num2;
+      break;
+    case '-':
+      resultado = num1 - num2;
+      break;
+    case '*':
+      resultado = num1 * num2;
+      break;
+    case '/':
+      resultado = num2 !== 0 ? num1 / num2 : 'Divisão por zero não é permitida';
+      break;
+    default:
+      resultado = 'Operação inválida';
+  }
+
+  return resultado;
+}
+
+// Exemplo de uso
+console.log(calcular(10, 5, '+')); // Resultado: 15
