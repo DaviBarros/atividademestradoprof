@@ -16,7 +16,7 @@ function calcular(num1, num2, operacao) {
       resultado = num2 !== 0 ? num1 / num2 : 'Divisão por zero não é permitida';
       break;
     default:
-      resultado = 'Operação inválida';
+      resultado = 'Operação indevida';
   }
 
   return resultado;
